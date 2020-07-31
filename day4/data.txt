@@ -51,3 +51,40 @@ console.log(newid);
 player("sapan","football");
 
 5.......................................................
+//for loops with es6
+let incomes=[61000,22000,45000
+];
+let total=0;
+for(const income of incomes)
+{ total += income;
+
+}
+console.log(total);
+
+6...........................................................
+//printing elements of a string using loops
+let names="sapan saxena";
+for (name of names)
+{
+  console.log(name);
+}
+
+7...........................................................
+//spread operator in js, it actually copy the data into another variable 
+//without connection
+let contacts=["sapan","rupam","nitesh"];
+let friends=[...contacts]; //insted of using [contacts] use ...contact
+contacts.push("simran");
+console.log(friends);
+
+8............................................................
+
+//rest operator
+//it is used when no. of argument is not fixed 
+function add(...nums)
+{console.log(arguments);
+}
+add(4,5,6,7,8);
+ 
+9...........................................................
+
