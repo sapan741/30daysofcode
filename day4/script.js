@@ -1,83 +1,4 @@
-1.........................................
-//templates literals:
-let word1="rohan bhurga";
-let word2="is a very good boy"; 
-//its a traditional approach
-//console.log(word1+" "+word2);
-//now lets try with template literal
-console.log(`${word1}  ${word2}`);
 
-2.........................................
-. //destructuring objects:
-const player=
-{
- name :"nitesh lodha",
- club :"backbenchers",
- address :{city:"indore"}
-};
-/*its a traditional approach
-console.log(player.name);
-console.log(player.club);
-console.log(player.address.city);
-*/
-//now lets try object destructuring
-const {name,club,address}=player;
-console.log( `${name} playes for ${club}`);
-
-3..........................................
-//destructuring arrays:
-const player=
-[
- "nitesh lodha","backbenchers","indore"
-]
-/*its a traditional approach
-console.log(player[0]);
-console.log(player[1]);
-console.log(player[2]);
-*/
-//now lets try array destructuring
-const [name,club,address]=player;
-console.log( `${name} playes for ${club} in ${address}`);
-
-4.........................................................
-//object literals:
-function player(name,game)
-
-{ const newid={
-    newname:name,
-  newgame:game};
-console.log(newid);
-}
-player("sapan","football");
-
-5.......................................................
-//for loops with es6
-let incomes=[61000,22000,45000
-];
-let total=0;
-for(const income of incomes)
-{ total += income;
-
-}
-console.log(total);
-
-6...........................................................
-//printing elements of a string using loops
-let names="sapan saxena";
-for (name of names)
-{
-  console.log(name);
-}
-
-7...........................................................
-//spread operator in js, it actually copy the data into another variable 
-//without connection
-let contacts=["sapan","rupam","nitesh"];
-let friends=[...contacts]; //insted of using [contacts] use ...contact
-contacts.push("simran");
-console.log(friends);
-
-8............................................................
 
 //rest operator
 //it is used when no. of argument is not fixed 
@@ -86,4 +7,3 @@ function add(...nums)
 }
 add(4,5,6,7,8);
  
-9...........................................................
